@@ -16,9 +16,12 @@
 '''
 import time
 
+import ddddocr
 from selenium import webdriver
+from selenium.common import WebDriverException
 from selenium.webdriver.chrome.service import Service
-from class17_options.options import options
+from selenium.webdriver.firefox.service import Service
+from class17_options.options import options, firefox_options
 
 
 # 关键字驱动类实例
@@ -35,10 +38,19 @@ def open_browser(browser_type):
         if browser_type == 'Chrome':
             service = Service(r'D:\DevelopmentEnvironment\BrowserDrivers\chromedriver.exe')
             driver = webdriver.Chrome(service=service, options=options())
+        elif browser_type =='FireFox':
+            service = Service(r'D:\DevelopmentEnvironment\BrowserDrivers\geckodriver.exe')
+            driver = webdriver.Firefox(service=service, options=firefox_options())
         else:
             driver = getattr(webdriver, browser_type.capitalize())()
+            print("asd")
+    except (AttributeError, WebDriverException) as e:
+        print(f"浏览器启动失败: {e}")
+        driver = webdriver.Chrome()     # 生成没有任何浏览器配置的Chromedriver对象
+    """
     except:
         driver = webdriver.Chrome()  # 生成没有任何浏览器配置的Chromedriver对象
+    """
     return driver
 
     # 方法2：基于匹配机制实现浏览器生成：具体方案内容，大家课后可以尝试补足逻辑
@@ -109,3 +121,9 @@ class WebKeys:
         预期结果为：{expected}
         实际结果为：{reality}  # 现在显示的是文本，而不是对象
         断言结果：{expected} != {reality}'''
+
+
+    # 验证码处理
+    def get_code(self, by, value):
+        file = self.locator(by, value).screenshot_as_png
+        return ddddocr.DdddOcr(show_ad=False).classification(file)

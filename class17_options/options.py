@@ -1,5 +1,5 @@
 '''
-    封装类
+    浏览器配置封装类
 '''
 
 from selenium import webdriver
@@ -57,5 +57,16 @@ def options():
     option.add_argument('--log_level=3')
     option.add_argument('--disable-gpu')
     option.add_argument('--ignore-certificate-errors')
+
+    return option   # 封装成函数后，一定要记得添加return
+
+
+def firefox_options():
+    option = webdriver.FirefoxOptions()
+    # Firefox个人资料路径
+    profile_path = r"C:\Users\1\AppData\Roaming\Mozilla\Firefox\Profiles\vby4egfz.default-release"
+    option.add_argument('start-maximized')
+    option.add_argument("-profile")
+    option.add_argument(profile_path)
 
     return option   # 封装成函数后，一定要记得添加return
