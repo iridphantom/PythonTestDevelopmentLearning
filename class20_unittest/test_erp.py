@@ -71,7 +71,7 @@ class TestAdd(unittest.TestCase):
 
     def test_05_assert(self):
         # 断言：判断修改是否成功添加邮箱：
-        saved_email = WebDriverWait(self.driver, 10).until(
+        saved_email = WebDriverWait(self.driver.driver, 10).until(
             lambda x: self.driver.locator('xpath', f'//td[text()="{email}"]/..//td[8]')
         ).text
 
@@ -89,7 +89,7 @@ class TestAdd(unittest.TestCase):
         sleep(1)
 
         # 判断是否成功退出登录
-        WebDriverWait(self.driver, 10, 0.5).until(
+        WebDriverWait(self.driver.driver, 10, 0.5).until(
             lambda element: self.driver.locator('xpath', '//small[text()="V3.3"]'),
             message='退出登录失败')  # 创建一个显式等待对象, 10秒内每隔0.5秒检查一次目标元素是否加载完成, 如果超过10秒还没有加载完成，就会抛出异常。
 
