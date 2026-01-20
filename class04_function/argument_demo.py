@@ -23,10 +23,10 @@
 def demo(a, b, c, d, e, f, g):
     pass  # 如果不需要在函数中写入任何内容，可以用pass来代替。
 
-def demo_plus(a):
-    print(type(a))  # <class 'tuple'>
-    print(a)    # ('a', 1, 2, 3, 4, 5, 6)
-    print(*a)   # 将元组拆解成了所有的元素。a 1 2 3 4 5 6
+def demo_plus(args):
+    print(type(args))  # <class 'tuple'>
+    print(args)    # ('a', 1, 2, 3, 4, 5, 6)
+    print(*args)   # 将元组拆解成了所有的元素：a 1 2 3 4 5 6
 
 da = ('a', 1, 2, 3, 4, 5, 6)
 demo(*da)   # 解析元组：*在哪，就在哪解析元组。

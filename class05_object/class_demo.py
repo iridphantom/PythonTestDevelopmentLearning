@@ -25,6 +25,7 @@ from tkinter.font import names
 
 
 # 类的定义
+# 类名的命名规则一般用大驼峰形式
 class Person:
     # 属性
     name = "张三"
@@ -36,21 +37,21 @@ class Person:
         self.status = status    # 实例化时，定义一个status（当前状态）的属性
 
     # 方法
-    def eat(self):
+    def eat(self):  # 实例方法
         print("吃吃吃吃吃")
 
-    def drink(self):
+    def drink(self):    # 实例方法
         print("喝喝喝喝喝")
 
-    def fun1(self):
+    def fun1(self): # 实例方法
         print(f"当前状态：{self.status}")    # 如果想要在类方法中调用类属性，则必须通过self.属性名称进行调用。
         print(self.name)
         self.eat()  # 如果想在方法中调用类自己的方法，则使用self.方法名()
 
 
-    # 静态方法的定义
-    @staticmethod   # @表示装饰器
-    def show(): # 静态方法没有self参数。
+    # 静态方法
+    @staticmethod   # 使用@staticmethod装饰器定义
+    def show(): # 静态方法没有self或者cls参数。
         print("这是一个静态方法")
 
 
