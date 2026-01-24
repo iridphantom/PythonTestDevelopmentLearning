@@ -1,0 +1,9 @@
+WARNING 2026-01-22 14:48:22,626 logging_plus.py 44 : 这是warning级别的日志
+ERROR 2026-01-22 14:48:22,627 logging_plus.py 45 : 这是error级别的日志
+CRITICAL 2026-01-22 14:48:22,627 logging_plus.py 46 : 这是critical级别的日志
+WARNING 2026-01-22 14:52:11,281 logging_plus.py 44 : 这是warning级别的日志
+ERROR 2026-01-22 14:52:11,281 logging_plus.py 45 : 这是error级别的日志
+CRITICAL 2026-01-22 14:52:11,281 logging_plus.py 46 : 这是critical级别的日志
+2026-01-22 15:00:32,821 - root - WARNING - 这是warning级别的日志
+2026-01-22 15:00:32,821 - root - ERROR - 这是error级别的日志
+2026-01-22 15:00:32,821 - root - CRITICAL - 这是critical级别的日志

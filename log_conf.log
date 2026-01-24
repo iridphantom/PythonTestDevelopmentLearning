@@ -1,0 +1,2 @@
+INFO 2026-01-22 15:51:31,683 logging_config.py logging_config <module> 21 : 这个是配置文件的info
+INFO 2026-01-22 15:51:31,684 main.py main <module> 7 : 这个是配置文件的info

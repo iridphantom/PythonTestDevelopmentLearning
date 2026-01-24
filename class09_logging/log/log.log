@@ -1,0 +1,5 @@
+DEBUG 2026-01-22 14:37:58,598 logging_base.py 36 : 这是debug级别的日志
+INFO 2026-01-22 14:37:58,598 logging_base.py 37 : 这是info级别的日志
+WARNING 2026-01-22 14:37:58,598 logging_base.py 38 : 这是warning级别的日志
+ERROR 2026-01-22 14:37:58,598 logging_base.py 39 : 这是error级别的日志
+CRITICAL 2026-01-22 14:37:58,598 logging_base.py 40 : 这是critical级别的日志
