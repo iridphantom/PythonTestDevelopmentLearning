@@ -1,7 +1,12 @@
 import pathlib
 
+from class07_file.file_demo2 import read_file
 from class09_logging.logging_config import get_logger
 
 if __name__ == '__main__':
-    log = get_logger()
-    log.info('这个是配置文件的info')
+
+    print(read_file('./class07_file/paper1.txt'))
+    # print(read_file('./README.md'))
+
+    # log = get_logger()
+    # log.info('这个是配置文件的info')

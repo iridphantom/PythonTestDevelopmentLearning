@@ -1,2 +1,6 @@
 INFO 2026-01-22 15:51:31,683 logging_config.py logging_config <module> 21 : 这个是配置文件的info
 INFO 2026-01-22 15:51:31,684 main.py main <module> 7 : 这个是配置文件的info
+INFO 2026-01-26 09:56:22,168 logging_config.py logging_config <module> 22 : 这个是配置文件的info
+INFO 2026-01-26 09:56:34,409 logging_config.py logging_config <module> 22 : 这个是配置文件的info
+INFO 2026-01-26 10:02:00,325 logging_config.py logging_config <module> 22 : 这个是配置文件的info
+INFO 2026-01-26 11:35:42,084 logging_config.py logging_config <module> 27 : 这个是配置文件的info

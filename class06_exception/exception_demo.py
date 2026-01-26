@@ -14,7 +14,7 @@
 
 
     Exception对象：
-        Exception时所有异常和错误的爹，Exception继承于BaseException
+        Exception是所有异常和错误的爹，Exception继承于BaseException
         因此所有的异常和错误，都是继承于BaseException类来实现的。
         所有的异常和错误，都有独属于自己的类（例如ValueError、ZeroDivisionError...）。而except语法可以捕获指定的异常和错误。
         except可以存在多个，用于处理多个不同的异常

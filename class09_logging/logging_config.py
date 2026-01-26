@@ -9,12 +9,17 @@ import pathlib
 def get_logger():
     # 配置文件的路径
     # file = './log_conf.ini'   # 不合适-->下一行进行更新
-    file = pathlib.Path(__file__).parents[0] / 'log_conf.ini'   # pathlib.Path(__file__)：获取当前执行文件的绝对路径；parents[0]：获取上级路径；/：路径拼接符；'log_conf.ini'：文件名。
+    file = pathlib.Path(__file__).parents[0] / 'log_conf.ini'
+        # pathlib.Path(__file__)：获取当前执行文件的绝对路径；
+        # parents[0]：获取当前文件的父目录路径。
+        # /：路径拼接符；'log_conf.ini'：文件名。
 
     # 基于ini文件实现日志的配置项
-    logging.config.fileConfig(file, encoding='utf-8')
+    logging.config.fileConfig(file, encoding='utf-8')   # 从 log_conf.ini 文件读取日志配置信息，应用配置中的日志级别、格式、处理器等设置，初始化整个日志系统的配置参数
+
     # 创建日志记录器
     logger = logging.getLogger()
+
     # 一定要返回日志记录器，否则无法使用。
     return logger
 
@@ -35,6 +40,8 @@ log.info('这个是配置文件的info')
     因为是路径对象，所以不需要字符串的拼接，直接通过 / 来实现路径的拼接即可。
     因为已有当前文件的绝对路径，所以推导时需要关联到文件的上下级
     parents查找父类，通过下标来查找父类，0是上级，1是上上级，2是上上上级。。。。。
+    
+    .resolve()方法用于解析并返回绝对路径，将相对路径转换为完整的绝对路径，更加严谨。
 """
-# file = pathlib.Path(__file__).parents[0].resolve() / 'log_conf.ini' # resolve是执行的意思，执行当前内容并生成结果，之后进行拼接
-# print(file)
+# file = pathlib.Path(__file__).parents[0].resolve() / 'log_conf.ini' # .resolve() 方法用于解析并返回绝对路径，将相对路径转换为完整的绝对路径。
+# print(f"file:{file}")   # file:D:\Project\Python\hcc_python_class\class09_logging\log_conf.ini

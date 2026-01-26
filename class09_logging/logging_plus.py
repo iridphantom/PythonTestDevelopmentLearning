@@ -21,7 +21,7 @@ logger.setLevel(logging.WARNING)  # 只记录warning及以上的日志
 # handler处理器创建：控制台处理器（在控制台中输出）
 stream_handler = logging.StreamHandler()    # 创建控制台处理器
 # 设置处理器的日志等级
-stream_handler.setLevel(logging.INFO)   # 控制台处理器只记录info及以上的日志
+stream_handler.setLevel(logging.INFO)   # 控制台处理器只记录info及以上的日志。（虽然输出的日志等级是warning及以上的，但是控制台处理器只记录info及以上的日志）
 # 设置处理器显示格式
 stream_handler.setFormatter(logging_formatter)
 
@@ -29,12 +29,13 @@ stream_handler.setFormatter(logging_formatter)
 # 创建处理器：文件处理器，用于将日志记录保存到文件之中
 file_handler = logging.FileHandler(filename='./log/log_plus.log', encoding='utf-8')
 # 设置文件处理器的日志等级
-file_handler.setLevel(logging.DEBUG)
+file_handler.setLevel(logging.DEBUG)    # 文件处理器只记录debug及以上的日志。（虽然输出的日志等级是warning及以上的，但是文件处理器只记录debug及以上的日志）
 # 设置文件处理器的显示格式
 file_handler.setFormatter(logging_formatter)
 
 # 将stream_handler添加到logger之中
 logger.addHandler(stream_handler)
+
 # 将file_handler添加到logger之中
 logger.addHandler(file_handler)
 
