@@ -124,21 +124,3 @@ for value in sheet1.values: # 遍历表格；value代表每一行的内容；val
                 例如：wk.click(by='id', value='submit-btn')
             """
             getattr(wk, value[1])(**data)   # 操作行为基于反射机制实现
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

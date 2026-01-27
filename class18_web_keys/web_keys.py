@@ -42,7 +42,9 @@ def open_browser(browser_type):
             service = Service(r'D:\DevelopmentEnvironment\BrowserDrivers\geckodriver.exe')
             driver = webdriver.Firefox(service=service, options=firefox_options())
         else:
-            driver = getattr(webdriver, browser_type.capitalize())()
+            # browser_type.capitalize()：将浏览器类型首字母大写，例如 "chrome" → "Chrome"
+            # getattr(webdriver, ...)：从 webdriver 模块中获取指定名称的属性/类，相当于动态调用 webdriver.Chrome 或 webdriver.Edge 等
+            driver = getattr(webdriver, browser_type.capitalize())()    # 动态创建浏览器
             print("asd")
     except (AttributeError, WebDriverException) as e:
         print(f"浏览器启动失败: {e}")

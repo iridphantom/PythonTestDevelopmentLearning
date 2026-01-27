@@ -18,10 +18,9 @@
     3. 每一个用例之间一定要尽可能地低耦合状态。彼此之间最好要不关联。
 """
 import unittest
+
 from time import sleep
-
 from selenium.webdriver.support.wait import WebDriverWait
-
 from class18_web_keys.web_keys import WebKeys
 
 text = 'UnitTest自动化新增数据变量6'
@@ -42,9 +41,10 @@ class TestAdd(unittest.TestCase):
 
     def test_01_login(self):    # 注意命名方式。
         self.driver.open("http://39.101.122.147:3000/user/login")
+        # 已经添加了浏览器缓存，就不需要输入账号、密码
         # self.driver.input('id', 'loginName', 'jsh')
         # self.driver.input('id', 'password', '123456')
-        code = self.driver.get_code('xpath', '//img[@data-v-4f5798c5]') # 获取验证码
+        code = self.driver.get_code('xpath', '//img[@data-v-4f5798c5]') # 获取验证码，并进行处理
         self.driver.input('id', 'inputCode', code)  # 输入验证码
         self.driver.click('xpath', '//button[@data-v-4f5798c5]')    # 点击登录
         sleep(2)

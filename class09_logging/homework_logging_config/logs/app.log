@@ -1,0 +1,21 @@
+INFO 2026-01-26 12:52:26 logger.py logger setup_logging 53 : 日志配置已从 D:\Project\Python\hcc_python_class\class09_logging\homework_logging_config\temp_logging.ini 加载
+INFO 2026-01-26 12:52:26 main.py main main 55 : === 应用程序启动 ===
+INFO 2026-01-26 12:52:26 main.py main simulate_daily_activity 35 : 开始处理 周一 的任务
+WARNING 2026-01-26 12:52:26 main.py main simulate_daily_activity 37 : 周一 - 警告信息
+ERROR 2026-01-26 12:52:26 main.py main simulate_daily_activity 38 : 周一 - 错误信息
+INFO 2026-01-26 12:52:26 main.py main simulate_daily_activity 43 : 周一 - 计算结果: 5.0
+INFO 2026-01-26 12:52:26 main.py main simulate_daily_activity 47 : 周一 的任务处理完毕
+
+INFO 2026-01-26 12:52:27 main.py main simulate_daily_activity 35 : 开始处理 周二 的任务
+WARNING 2026-01-26 12:52:27 main.py main simulate_daily_activity 37 : 周二 - 警告信息
+ERROR 2026-01-26 12:52:27 main.py main simulate_daily_activity 38 : 周二 - 错误信息
+INFO 2026-01-26 12:52:27 main.py main simulate_daily_activity 43 : 周二 - 计算结果: 5.0
+INFO 2026-01-26 12:52:27 main.py main simulate_daily_activity 47 : 周二 的任务处理完毕
+
+INFO 2026-01-26 12:52:28 main.py main simulate_daily_activity 35 : 开始处理 周三 的任务
+WARNING 2026-01-26 12:52:28 main.py main simulate_daily_activity 37 : 周三 - 警告信息
+ERROR 2026-01-26 12:52:28 main.py main simulate_daily_activity 38 : 周三 - 错误信息
+INFO 2026-01-26 12:52:28 main.py main simulate_daily_activity 43 : 周三 - 计算结果: 5.0
+INFO 2026-01-26 12:52:28 main.py main simulate_daily_activity 47 : 周三 的任务处理完毕
+
+INFO 2026-01-26 12:52:29 main.py main main 63 : === 应用程序正常关闭 ===

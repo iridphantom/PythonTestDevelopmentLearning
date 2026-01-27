@@ -1,6 +1,6 @@
-'''
+"""
     浏览器配置封装类
-'''
+"""
 
 from selenium import webdriver
 
@@ -51,7 +51,7 @@ def options():
     """
     # option.add_argument(r'--user-data-dir=C:\Users\1\AppData\Local\Google\Chrome\User Data')
 
-    # # 去除控制台的多余日志信息。
+    # 去除控制台的多余日志信息。
     option.add_experimental_option('excludeSwitches', ['enable-logging'])
     # 如果常规日志去除无效果，则可以调用以下方法
     option.add_argument('--log_level=3')

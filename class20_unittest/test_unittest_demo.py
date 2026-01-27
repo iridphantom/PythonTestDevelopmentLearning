@@ -13,7 +13,7 @@
                 推荐的用例命名规范：（最终还是要以公司的编码规范要求为首要定义。）
                     test_编号_业务名称()
                     test_01_login()
-            ⑥. 测试用例虽然是方法的结构，但是不推荐使用return。避免用例之间的相互调用。
+            ⑥. 测试用例虽然是方法的结构，但是不推荐使用return，避免用例之间的相互调用。
                如果需要关联到用例产生的数据，建议【以成员属性赋值的方式】来完成。
             ⑦. 用例总计有三种不同的状态：
                 1. Pass 通过
@@ -109,7 +109,7 @@ class TestDemo01(unittest.TestCase):
             assert 1 == num
         except:
             print("处理异常")
-            raise
+            raise   # 添加异常处理，不影响测试用例的结果：在except之中添加raise关键字。
 
 
 class TestDemo02(unittest.TestCase):    # 不会调用TestDemo01中的代码

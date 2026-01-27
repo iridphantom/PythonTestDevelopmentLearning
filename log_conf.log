@@ -4,3 +4,50 @@ INFO 2026-01-26 09:56:22,168 logging_config.py logging_config <module> 22 : 这�
 INFO 2026-01-26 09:56:34,409 logging_config.py logging_config <module> 22 : 这个是配置文件的info
 INFO 2026-01-26 10:02:00,325 logging_config.py logging_config <module> 22 : 这个是配置文件的info
 INFO 2026-01-26 11:35:42,084 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:12:58,935 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:12:58,935 logger.py logger setup_logging 17 : 确保日志目录 logs 存在
+WARNING 2026-01-26 12:12:58,935 logger.py logger setup_logging 24 : 日志配置文件 logging.ini 不存在，使用默认配置
+INFO 2026-01-26 12:12:58,935 main.py main main 10 : 应用程序启动
+INFO 2026-01-26 12:12:58,936 main.py main main 14 : 应用程序正常关闭
+INFO 2026-01-26 12:13:58,947 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:13:58,947 logger.py logger setup_logging 17 : 确保日志目录 logs 存在
+WARNING 2026-01-26 12:13:58,947 logger.py logger setup_logging 24 : 日志配置文件 ./logging.ini 不存在，使用默认配置
+INFO 2026-01-26 12:13:58,947 main.py main main 10 : 应用程序启动
+INFO 2026-01-26 12:13:58,947 main.py main main 14 : 应用程序正常关闭
+INFO 2026-01-26 12:15:25,909 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:15:25,909 logger.py logger setup_logging 19 : 确保日志目录 logs 存在
+INFO 2026-01-26 12:18:10,101 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:18:10,101 logger.py logger setup_logging 19 : 确保日志目录 logs 存在
+INFO 2026-01-26 12:19:12,205 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:19:12,205 logger.py logger setup_logging 19 : 确保日志目录 logs 存在
+INFO 2026-01-26 12:19:23,595 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:19:23,595 logger.py logger setup_logging 19 : 确保日志目录 logs 存在
+INFO 2026-01-26 12:20:08,535 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:20:08,535 logger.py logger setup_logging 19 : 确保日志目录 logs 存在
+INFO 2026-01-26 12:20:36,819 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:20:36,819 logger.py logger setup_logging 19 : 确保日志目录 logs 存在
+INFO 2026-01-26 12:32:00,641 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:32:00,641 logger.py logger setup_logging 23 : 确保日志目录 D:\Project\Python\hcc_python_class\class09_logging\homework_logging_config\logs 存在
+INFO 2026-01-26 12:32:48,104 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:32:48,104 logger.py logger setup_logging 23 : 确保日志目录 D:\Project\Python\hcc_python_class\class09_logging\homework_logging_config\logs 存在
+INFO 2026-01-26 12:33:04,502 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:33:04,502 logger.py logger setup_logging 23 : 确保日志目录 D:\Project\Python\hcc_python_class\class09_logging\homework_logging_config\logs 存在
+INFO 2026-01-26 12:34:16,093 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:36:41,459 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:36:41,459 logger.py logger setup_logging 23 : 确保日志目录 D:\Project\Python\hcc_python_class\class09_logging\homework_logging_config\logs 存在
+INFO 2026-01-26 12:37:30,802 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:37:30,802 logger.py logger setup_logging 23 : 确保日志目录 D:\Project\Python\hcc_python_class\class09_logging\homework_logging_config\logs 存在
+INFO 2026-01-26 12:39:12,656 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:39:12,657 logger.py logger setup_logging 23 : 确保日志目录 D:\Project\Python\hcc_python_class\class09_logging\homework_logging_config\logs 存在
+INFO 2026-01-26 12:42:06,588 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:42:06,588 logger.py logger setup_logging 24 : 确保日志目录 D:\Project\Python\hcc_python_class\class09_logging\homework_logging_config\logs 存在
+INFO 2026-01-26 12:42:54,664 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:42:54,664 logger.py logger setup_logging 24 : 确保日志目录 D:\Project\Python\hcc_python_class\class09_logging\homework_logging_config\logs 存在
+INFO 2026-01-26 12:45:02,048 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:45:02,049 logger.py logger setup_logging 25 : 确保日志目录 D:\Project\Python\hcc_python_class\class09_logging\homework_logging_config\logs 存在
+INFO 2026-01-26 12:45:31,836 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:45:31,837 logger.py logger setup_logging 26 : 确保日志目录 D:\Project\Python\hcc_python_class\class09_logging\homework_logging_config\logs 存在
+INFO 2026-01-26 12:47:53,575 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:47:53,575 logger.py logger setup_logging 26 : 确保日志目录 D:\Project\Python\hcc_python_class\class09_logging\homework_logging_config\logs 存在
+INFO 2026-01-26 12:52:26,573 logging_config.py logging_config <module> 27 : 这个是配置文件的info
+INFO 2026-01-26 12:52:26,573 logger.py logger setup_logging 24 : 确保日志目录 D:\Project\Python\hcc_python_class\class09_logging\homework_logging_config\logs 存在
