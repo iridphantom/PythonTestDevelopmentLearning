@@ -12,8 +12,8 @@ from selenium.webdriver.chrome.service import Service
 
 
 """
-页面加载策略的修改
-创建浏览器设置对象
+    页面加载策略的修改
+    创建浏览器设置对象
 """
 options = webdriver.ChromeOptions()  # 你是什么浏览器就创建什么类型的options对象
 # 设置页面加载策略，默认是normal

@@ -1,4 +1,6 @@
 '''
+    UI自动化案例 UI自动化案例 UI自动化案例
+
     网站：http://39.101.122.147:3000/user/login
         账号：jsh
         密码：123456
@@ -23,7 +25,6 @@ import ddddocr
 
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
-from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.wait import WebDriverWait
 
 # Firefox个人资料路径
@@ -54,7 +55,7 @@ driver.get("http://39.101.122.147:3000/user/login")
 """
     验证码一般不自动化处理。如果必须要处理，绕不开，一般可以使用ddddocr库来实现。它基于图片来进行内容识别，自动解析生成验证码内容。
     所有验证码处理都是一样的方式：
-        获取验证码图片，解析图片内容，获取值，校验是否正确，如果错误，则刷新验证码图片。重头再来一次。
+        获取验证码图片-->解析图片内容-->获取值-->校验是否正确，如果错误，则刷新验证码图片，重头再来一次。
         while true:
             获取验证码
             解析验证码

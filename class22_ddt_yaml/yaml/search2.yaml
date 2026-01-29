@@ -1,0 +1,17 @@
+-
+  common: &common
+    url: https://www.baidu.com
+    input:
+      by: id
+      value: chat-textarea
+    click:
+      by: id
+      value: chat-submit-button
+    wait_time: 3
+  txt: 文字1
+
+# 引用锚点
+-
+  common:
+    <<: *common # 合并锚点内容
+  txt: 文字2

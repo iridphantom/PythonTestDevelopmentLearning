@@ -1,0 +1,21 @@
+-
+  url: https://www.baidu.com
+  input:
+    by: id
+    value: chat-textarea
+    txt: ddt
+  click:
+    by: id
+    value: chat-submit-button
+  wait_time: 5
+
+-
+  url: https://www.baidu.com
+  input:
+    by: id
+    value: chat-textarea
+    txt: 碳酸锂缓释片
+  click:
+    by: id
+    value: chat-submit-button
+  wait_time: 5

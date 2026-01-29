@@ -37,7 +37,7 @@ def open_browser(browser_type):
     try:
         if browser_type == 'Chrome':
             service = Service(r'D:\DevelopmentEnvironment\BrowserDrivers\chromedriver.exe')
-            driver = webdriver.Chrome(service=service, options=options())
+            driver = webdriver.Chrome(service=service, options=options())   # options在class17中的options.py中定义
         elif browser_type =='FireFox':
             service = Service(r'D:\DevelopmentEnvironment\BrowserDrivers\geckodriver.exe')
             driver = webdriver.Firefox(service=service, options=firefox_options())

@@ -1,0 +1,9 @@
+name: 张三
+sex: male
+age: 20
+like:
+  game: cs2
+  sport: badminton
+  others:
+    oth1: sleep
+    oth2: 干饭

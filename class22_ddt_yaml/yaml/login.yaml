@@ -1,0 +1,9 @@
+-
+  login:
+    username: zhangsan
+    pwd: 123456
+
+  info:
+    name: 张三
+    age: 18
+    sex: 男
