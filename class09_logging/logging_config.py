@@ -9,7 +9,7 @@ import pathlib
 def get_logger():
     # 配置文件的路径
     # file = './log_conf.ini'   # 不合适-->下一行进行更新
-    file = pathlib.Path(__file__).parents[0] / 'log_conf.ini'
+    file = pathlib.Path(__file__).parents[0] / 'log_conf.ini'   # 获取日志配置文件的路径
         # pathlib.Path(__file__)：获取当前执行文件的绝对路径；
         # parents[0]：获取当前文件的父目录路径。
         # /：路径拼接符；'log_conf.ini'：文件名。

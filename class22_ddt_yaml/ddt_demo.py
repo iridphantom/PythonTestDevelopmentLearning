@@ -65,12 +65,12 @@ class TestDDT01(unittest.TestCase):  # 声明后，当前类中所有用例都�
 class TestDDT02(unittest.TestCase):
     # @file_data('./search.yaml')  # 专门用于解析yaml文件中的内容
     # def test_001_search(self, **kwargs):
-    # driver = WebKeys('Chrome')
-    # driver.open(kwargs['url'])
-    # driver.input(**kwargs['input'])
-    # driver.click(**kwargs['click'])
-    # driver.wait(kwargs['wait_time'])
-    # print(kwargs)
+    #     driver = WebKeys('Chrome')
+    #     driver.open(kwargs['url'])
+    #     driver.input(**kwargs['input'])
+    #     driver.click(**kwargs['click'])
+    #     driver.wait(kwargs['wait_time'])
+    #     print(kwargs)
     """
                kwargs参数的内容：
                {'url': 'https://www.baidu.com',
