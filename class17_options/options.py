@@ -1,5 +1,8 @@
 """
     浏览器配置封装类
+    需要使用哪个浏览器的配置，就导入哪个。
+    driver = webdriver.Firefox(service=service, options=firefox_options())
+    driver = webdriver.Chrome(service=service, options=options())
 """
 
 from selenium import webdriver
