@@ -60,7 +60,7 @@ file1 = open(r'./paper1.txt', mode='r', encoding='utf-8')
 
 
 # readlines：获取文件的所有行内容，每一行都是一个单独的元素，并返回一个列表
-# print(file.readlines())
+# print(file.readlines())   # ['class07-文件操作\n', '这是paper1.txt\n', '\n', '我真的不知道写什么了\n', '随便写点凑字数\n', '嗯']
 # for line in file.readlines():
 #     print(line)
 
