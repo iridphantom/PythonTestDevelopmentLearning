@@ -46,4 +46,5 @@ class TestDemo02:
         print("这是测试用例2.2")
 
 if __name__ == '__main__':
-    pytest.main(['-sv', '-k test_demo'])
+        # pytest.main(['-sv', '-k test_demo'])
+    pytest.main(['-sv', '-n 5'])
