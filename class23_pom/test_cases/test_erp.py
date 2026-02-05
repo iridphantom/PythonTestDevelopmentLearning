@@ -43,7 +43,7 @@ class TestErp(unittest.TestCase):
         cls.driver.quit()   # 退出浏览器
 
 
-    @file_data('../test_data/login.yaml')   # 记得要加@ddt
+    @file_data('../test_data/login.yaml')   # 类的上面记得要加@ddt
     def test_01_login(self, username, password):
         self.login_page.login(username, password)
     """

@@ -6,10 +6,10 @@
             skipif 有条件跳过    @pytest.mark.skipif
 
 
-    pytest运行时，它会先获取所有的测试用例，之后判断哪些要调过，哪些不要跳过。
+    pytest运行时，它首先会先获取所有的测试用例，之后判断哪些要调过，哪些不要跳过。
 """
-import sys
 
+import sys
 import pytest
 
 a = 1
@@ -17,6 +17,14 @@ a = 1
 # 自定义跳过设置：如果python版本低于3.10，就提示跳过。（3是大版本，10是小版本。）
 # 对于一些特殊的代码的运行，可以定义一些版本要求。（logging库中，3.8和3.10的有的参数定义是不一样的）
 my_custom_skip = pytest.mark.skipif(sys.version_info < (3, 10), reason="Python版本过低，跳过")
+"""
+    1. 使用pytest.mark.skipif创建条件跳过标记。
+    2. 条件为sys.version_info < (3, 10)，即当前Python版本小于3.10时触发跳过。
+    3. reason参数说明跳过原因："Python版本过低，跳过"。
+"""
+
+
+
 
 
 @pytest.mark.skip('这是无条件跳过')
@@ -45,3 +53,6 @@ def test_class25_skip_fun04():
 @my_custom_skip  # 自定义装饰器
 def test_class25_skip_fun05():
     print("只有Python3.10以上才可以看到这段话")
+
+
+# pytest test_skip.py -sv

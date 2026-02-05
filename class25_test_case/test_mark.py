@@ -6,7 +6,7 @@
     mark装饰器的使用：
         1. @pytest.mark实现对用例进行标记
         2. 可以实现对用例进行标记分类的作用
-        3. 运行指定的标记测试用例，需要调用-m指令，指令支持逻辑运算符
+        3. 运行指定的标记测试用例：需要调用-m指令，指令支持逻辑运算符
             -m 标记名称 执行指定标记名称的所有用例
             -m "login or register"   执行login标记或者是register标记的测试用例
             -m "login and register"  执行标记为login且同时为register的测试用例
@@ -14,7 +14,9 @@
         4. -m指令下的标签名称选择，一定要用双引号""括起来，否则识别会出问题。
         5. 标签名称不要太复杂，尽可能简单，方便标签的管理。
 """
-# mark装饰器使用示例：
+"""
+    mark装饰器使用示例：
+"""
 
 import pytest
 
@@ -35,9 +37,18 @@ def test_class25_mark_func03():
 
 
 
-def test_class25_mark_fun04():
+def test_class25_mark_func04():
     print("class25-mark-测试用例04")
 
 
-def test_class25_mark_fun05():
+def test_class25_mark_func05():
     print("class25-mark-测试用例05")
+
+
+if __name__ == '__main__':
+    pytest.main(['-sv', './test_mark.py', '-m login'])
+
+
+# cd class25_test_case
+# pytest test_mark.py -sv -m login
+# pytest test_mark.py -sv -m "not login"
