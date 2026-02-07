@@ -1,0 +1,19 @@
+# user_data.yaml
+# 用户测试数据
+admin_user:
+  username: "admin"
+  password: "admin123"
+  role: "administrator"
+  expected_login: true
+
+regular_user:
+  username: "user123"
+  password: "user123"
+  role: "user"
+  expected_login: true
+
+invalid_user:
+  username: "invalid"
+  password: "wrong"
+  role: "guest"
+  expected_login: false

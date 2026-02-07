@@ -8,7 +8,6 @@
 import unittest
 
 from ddt import ddt, data, unpack, file_data
-
 from class18_web_keys.web_keys import WebKeys
 
 
@@ -94,7 +93,7 @@ class TestDDT02(unittest.TestCase):
 @ddt
 class TestDDT03(unittest.TestCase):
     # 使用锚点
-    @file_data('./search2.yaml')  # 专用于解析yaml文件内容
+    @file_data('./yaml/search2.yaml')  # 专用于解析yaml文件内容
     def test_001_search(self, common, txt):
         driver = WebKeys('Chrome')
         driver.open(common['url'])

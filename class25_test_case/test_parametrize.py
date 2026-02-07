@@ -7,7 +7,7 @@
 
     Parametrize装饰器的应用：
         1. 基于@Pytest.mark.parametrize来实现调用的。
-        2.参数介绍：
+        2. 参数介绍：
             ①.参数1；必须与用例形参保持完全相同。
             ②.参数2；必须是list格式。
         3. 多参数下，如果通过多个Parametrize实现数据传递，则pytest会采用交集的计算方式实现数据的传入

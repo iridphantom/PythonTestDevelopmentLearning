@@ -79,7 +79,7 @@ report_dir = './report/'  # 测试报告保存路径
 # report_time = '{0:%Y-%m-%d %H_%M_%S}'.format(datetime.datetime.now())
 report_time = '{0:%Y-%m-%d %H_%M_%S_%f}'.format(datetime.datetime.now())  # 精确到毫秒
 report_file = report_dir + report_time + 'report.html'
-tester = 'schi'
+tester = 'iridescent'
 
 # 判断测试报告保存路径是否存在
 if not os.path.exists(report_dir):

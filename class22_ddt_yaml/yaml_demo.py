@@ -2,7 +2,10 @@
     yaml的操作：
         文件的读取
 '''
+import unittest
 import yaml
+from pathlib import Path
+from parameterized import parameterized
 
 """
     将读取文件操作封装成一个函数：
@@ -10,8 +13,9 @@ import yaml
         如果 YAML 文件的内容是一个字典（例如包含 fruits、numbers、users 等键），那么直接遍历这个对象会得到键名。
         需要访问每个键对应的值才能打印完整的数据。
 """
-def read_yaml(file):
-    with open(file=file, mode='r', encoding='utf-8') as f:
+def read_yaml(filepath):
+    """加载 YAML 测试数据"""
+    with open(file=filepath, mode='r', encoding='utf-8') as f:
         values = yaml.safe_load(f)
     return values
 
@@ -24,11 +28,15 @@ for value in values_list:
 
 print("————————————————————————————————————————————————————")
 
+
+
 # 打印 values_dict 中的所有数据
 for value in values_dict:
     print(value)
 
 print("————————————————————————————————————————————————————")
+
+
 
 # 打印search2.yaml中的数据（带有锚点）
 values_search2 = read_yaml('./yaml/search2.yaml')

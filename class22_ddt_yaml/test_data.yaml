@@ -1,0 +1,20 @@
+# test_data.yaml
+# 数组形式的测试数据
+-
+  name: "百度搜索Python"
+  url: "https://www.baidu.com"
+  search_term: "python"
+  expected_result: "Python官网"
+  timeout: 10
+-
+  name: "百度搜索Selenium"
+  url: "https://www.baidu.com"
+  search_term: "selenium"
+  expected_result: "Selenium官网"
+  timeout: 15
+-
+  name: "Google搜索Python"
+  url: "https://www.google.com"
+  search_term: "python"
+  expected_result: "Python.org"
+  timeout: 10

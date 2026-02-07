@@ -30,7 +30,7 @@ import pytest
 #
 #
 # # class级别
-# @pytest.fixture(scope='class')
+# @pytest.fixture(scope='class')A
 # def class_func():
 #     print('这个是class级别')
 #
