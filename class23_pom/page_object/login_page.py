@@ -32,7 +32,7 @@ class LoginPage(BasePage):    # 让LoginPage继承BasePage，就可以调用Base
         #self.input(*self.login_input_password, txt= password)
         self.input(*self.login_input_code, txt=self.get_code(*self.login_code_img))
         self.click(*self.login_button)
-        self.wait(5)
+        self.wait(2)
 
 
 # 编写完后，可以先运行一下，查看是否正常。

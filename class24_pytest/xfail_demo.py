@@ -9,7 +9,7 @@
                 1. condition：表示表达式，当为True时，xfail通过，提示为xpass状态，若为failed,则不执行
                 2. reason:当xfail装饰器生效时，显示的error信息
                 3. run，默认为True，可手动修改为False。代表是否需要执行xfail装饰器的用例
-                4. strict，默认为Failed，可修改为Ture。用例执行时，如果用例运行成功，xfail对应的测试用例就会显示为error状态
+                4. strict，默认为False，可修改为Ture。用例执行时，如果用例运行成功，xfail对应的测试用例就会显示为error状态
 
                 当某个功能点没完成但用例已经写好 / 还未运行 / 现阶段还不需要的运行的测试用例，可以定义一个xfail装饰器，用于返回xfail状态
 

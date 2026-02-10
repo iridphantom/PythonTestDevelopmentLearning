@@ -10,12 +10,14 @@
             1. session级别    整个测试session中都有效。只会在第一次调用的时候执行一次，后续调用都是基于已有的数据来继续执行。
             2. module级别     整个py文件执行一次
             3. class级别      整个class执行一次
-            4. function级别   每一个测试用例执行一次，是scope的默认等级
+            4. function级别（默认级别）   每一个测试用例执行一次
 
 """
 import pytest
 
-# 第一种pytest的前置定义：
+"""
+    第一种pytest的前置定义：
+"""
 
 # # session级别
 # @pytest.fixture(scope='session')
@@ -55,7 +57,10 @@ import pytest
 
 # --------------------------------------------------------
 
-# 第二种pytest的前置定义。个人不太推荐。
+
+"""
+    第二种pytest的前置定义。个人不太推荐。
+"""
 # 请不要使用这种方式 请不要使用这种方式 请不要使用这种方式 请不要使用这种方式
 # class TestDemo:
 #     def setup_method(self):  # function级别
@@ -93,7 +98,7 @@ def demo(request):
 @pytest.mark.parametrize('demo', [['name参数', 'value参数']], indirect=True)  # indirect=True表示为调用的是Fixture，而非普通参数
 def test_01(demo):
     print('这是测试用例')
-    print(demo) # 由于Fixture的默认级别是function，每一个测试用例执行一次，所以打印的时候是none。
+    print(demo) # 由于Fixture的默认级别是function，每一个测试用例执行一次，而上面已经执行过了一次，所以打印的时候是none。
 
 
 if __name__ == '__main__':

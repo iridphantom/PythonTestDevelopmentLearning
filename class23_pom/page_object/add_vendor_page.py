@@ -12,7 +12,7 @@ class AddVendorPage(BasePage):
     add_vendor_button = ('xpath', '//div[@class="table-operator"]/button[1]')   # “添加”按钮
     vendor_name_input = ('xpath', '//input[@id="supplier"]')    # 供应商名称输入框
     vendor_email_input = ('xpath', '//input[@id="email"]')      # 供应商邮箱输入框
-    vendor_save_button = ('xpath', '//span[text()="保 存"]/..')   # 保存按钮
+    vendor_save_button = ('xpath', '//span[text()="保 存"]')   # 保存按钮
 
 
     def add_vendor(self, vendor_name, vendor_email):

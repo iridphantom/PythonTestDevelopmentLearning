@@ -1,9 +1,21 @@
-name: 张三
-sex: male
-age: 20
-like:
-  game: cs2
-  sport: badminton
+-
+  name: 张三
+  sex: male
+  age: 20
+  like:
+    game: cs2
+    sport: badminton
   others:
     oth1: sleep
     oth2: 干饭
+
+-
+  name: 李四
+  sex: female
+  age: 22
+  like:
+    game: 纸片人
+    sport: yoga
+  others:
+    oth1: asd
+    oth2: fgh

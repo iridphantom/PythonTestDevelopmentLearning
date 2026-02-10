@@ -27,11 +27,11 @@ def test_class25_parametrize_func01(a):
     print("class25-parametrize-测试用例01")
 
 
-# 多装饰器：
+# 多装饰器：笛卡尔积，组合数据。
 # 多参数下，如果通过多个parametrize实现数据传递，则pytest会采用交集的计算方式实现数据的传入。
 @pytest.mark.parametrize('a', [1, 2, 3])
 @pytest.mark.parametrize('b', ['a', 'b', 'c'])
-def test_class25_parametrize_func02(a, b):
+def test_class25_parametrize_func02(a, b):  # 共有九条测试用例（3*3）
     print("class25-parametrize-测试用例02")
 
 
@@ -61,12 +61,7 @@ def test_class25_parametrize_func04(a):
     作用：可以为测试用例进行一些描述。
     ids默认不支持中文显示。但可以进行修改。(conftest.py中。暂时不需要掌握。）
 """
-ids = ['first_run第一', 'second_run第二']
-
-
-@pytest.mark.parametrize('user_data', yaml.safe_load(stream=open('./user.yaml', mode='r', encoding='utf-8')), ids=ids)
-def test_class25_parametrize_func05(user_data):
-    print(user_data)
+ids = ['first_run第一轮', 'second_run第二轮']
 
 
 # parametrize特定参数组的添加
